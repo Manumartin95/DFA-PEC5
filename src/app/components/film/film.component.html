@@ -1,0 +1,19 @@
+<div class="container border border-primary p-5 mt-5">
+    <div *ngIf="film" class="row animate__animated animate__bounce animate__fadeIn">
+        <div class="col-md-9">
+            <p><strong>Identifier: </strong> {{film.id}} </p>
+            <p><strong>Title: </strong> {{film.title}} </p>
+            <p><strong>Original title: </strong>{{film.original_title}}</p>
+            <p><strong>Director: </strong>{{film.director}}</p>
+            <p><strong>Release date: </strong>{{film.release_date}}</p>
+            <p><strong>Description: </strong> 
+                <br>
+                {{film.description}}
+            </p>
+        </div>
+
+        <div class="col-md-3">
+            <a routerLink="/" class="btn btn-danger ">Back</a>
+        </div>
+    </div>
+</div>
